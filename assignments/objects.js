@@ -19,26 +19,106 @@ const example = {
 
 // Write your intern objects here:
 
+const example = {
+  "id": 1,
+  "name": "Mitzi"
+  "email": "mmelloy0@psu.edu",
+  "gender": "F"
+}
+
+const example2 = {
+  "id": 2,
+  "name": "Kennan",
+  "email": "kdiben1@tinypic.com",
+  "gender": "M"
+}
+
+const example3 = {
+  "id": 3,
+  "name": "Keven",
+  "email": "kmummery2@wikimedia.org",
+  "gender": "M"
+}
+
+const example4 = {
+  "id": 4,
+  "name": "Gannie",
+  "email": "gmartinson3@illinois.edu",
+  "gender": "M"
+}
+
+const example5 = {
+  "id": 5,
+  "name": "Antonietta",
+  "email": "adaine5@samsung.com",
+  "gender": "F"
+}
+
+
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
 
+console.log(example.name);
+
 // Kennan's ID
+
+console.log(example2.id);
 
 // Keven's email
 
+console.log(example3.email);
+
 // Gannie's name
 
+console.log(example4.name);
+
 // Antonietta's Gender
+
+console.log(example5.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
-// Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
+
+// ========================== Object Literals
+
+const example2 = {
+  // object properties
+  "id": 2,
+  "name": "Kennan",
+  "email": "kdiben1@tinypic.com",
+  "gender": "M"
+  // object methods
+  example2.speak = function(){
+    return 'Hello, my name is Kennan!';
+  },
+};
+
+example2.speak();
+
+// console.log(kennan.speak());
+
+
+// Antonietta loves math, give her the ability to multiply two numbers together and return the product. 
+//Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+
+const example5 = {
+  "id": 5,
+  "name": "Antonietta",
+  "email": "adaine5@samsung.com",
+  "gender": "F"
+  example5.multiplyNum = function (x,y) {
+  return 3*4;
+}
+
+example5.multiplyNums(3,4);
+
+
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
