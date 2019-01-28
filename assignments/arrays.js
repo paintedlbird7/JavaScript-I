@@ -85,17 +85,9 @@ console.log(`Car 33 is a ` +
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the 
 //last car in the inventory?  Log the make and model into the console.
-let lastCar = 0;
-console.log();
 
-
-
-
-
-
-
-
-
+let lastCar = inventory[inventory.length-1];
+console.log(lastCar.car_make + " " + lastCar.car_model);
 
 
 // ==== Challenge 3 ====
@@ -103,8 +95,11 @@ console.log();
 //into alphabetical order and log the results in the console
 
 let carModels = [];
-console.log();
+for (i = 0; i < arr.length; i++) {
+    carModels.push(inventory[i].car_model);
+}
 
+console.log(carModels.sort().join("\n"));
 
 
 
