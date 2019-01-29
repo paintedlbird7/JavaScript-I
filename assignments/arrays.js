@@ -95,11 +95,11 @@ console.log(lastCar.car_make + " " + lastCar.car_model);
 //into alphabetical order and log the results in the console
 
 let carModels = [];
-for (i = 0; i < arr.length; i++) {
+for (i = 0; i < inventory.length; i++) {
     carModels.push(inventory[i].car_model);
 }
 
-console.log(carModels.sort().join("\n"));
+console.log(carModels);
 
 
 
@@ -109,19 +109,30 @@ console.log(carModels.sort().join("\n"));
 //data containing only the car years and log the result in the console.
 
 let carYears = [];
-console.log();
+for(i=0; i<inventory.length;i++) {
+  carYears.push(inventory[i].car_year);
+}
+console.log(carYears);
 
 
 
 
 
 // ==== Challenge 5 ====
-// The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears 
-//array you just created, find out how many cars were made before the year 2000 by populating the array 
-//oldCars and logging it's length.
+// The car lot manager needs to find out how many cars are older than the year 2000. 
+//Using the carYears array you just created, find out how many cars were made before the 
+//year 2000 by populating the array oldCars and logging it's length.
 
 let oldCars =[];
-console.log(); 
+for(i=0; i<carYears.length; i++){
+  if (carYears[i] > 2000){
+    continue;
+  }
+  else{
+    oldCars.push(carYears[i])
+  }
+}
+console.log(oldCars.length);  
 
 
 
@@ -133,7 +144,15 @@ console.log();
 //results of the array in the console.
 
 let BMWAndAudi =[];
-console.log();
+for(i=0; i<inventory.length; i++){
+  if (inventory[i].car_make === "Audi"){
+    BMWAndAudi.push(inventory[i])
+  }
+  if (inventory[i].car_make === "BMW"){
+    BMWAndAudi.push(inventory[i])
+  }
+}
+console.log(BMWAndAudi);
 
 
 
