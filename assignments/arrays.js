@@ -123,6 +123,11 @@ console.log(carYears);
 //Using the carYears array you just created, find out how many cars were made before the 
 //year 2000 by populating the array oldCars and logging it's length.
 
+// create an empty array
+// loop through each item in the array with car year
+// if we find one thats less than 2000 then continue with looping
+//else if it's not less than 2000, then push the old cars to show the list of years
+
 let oldCars =[];
 for(i=0; i<carYears.length; i++){
   if (carYears[i] > 2000){
